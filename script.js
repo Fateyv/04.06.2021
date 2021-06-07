@@ -5,9 +5,9 @@ const contactEl = document.getElementById('contactList')
 const nameEl = document.getElementById('newInputName');
 const surnameEl = document.getElementById('newInputSurname');
 const telEl = document.getElementById('newInputTel');
-// const table = document.getElementById('tableContact');
+const table = document.getElementById('tableContact');
 
-// table.addEventListener('click', removeRow);
+table.addEventListener('click', removeRow);
 
 document
     .getElementById('addContactBtn')
@@ -21,16 +21,16 @@ function onAddContactBtnClick() {
 }
 
 
-// function removeRow(e) {
-//     if (e.target.classList.contains('deleteBtn')) {
-//         removeListEl(e.target.closest('.newContactRow'));
-//     }
-// }
+function removeRow(e) {
+    if (e.target.classList.contains('deleteBtn')) {
+        removeListEl(e.target.closest('.newContactRow'));
+    }
+}
 
 
-// function removeListEl(el){
-//     el.remove();
-// }
+function removeListEl(el){
+    el.remove();
+}
 
 
 
